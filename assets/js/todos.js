@@ -13,6 +13,7 @@ $('ul').on('click', 'span', function(event){
     event.stopPropagation();//prevents bubbling into the li click function
 });
 
+//Enter a new todo in the text box
 $("input[type='text']").keypress(function(event){
     if(event.which === 13){//13 is the key code for the enter key
         //saving new todo text from input box
@@ -21,4 +22,9 @@ $("input[type='text']").keypress(function(event){
         //create a new li and add to ul
         $('ul').append('<li><span><i class="fas fa-trash-alt"></i></span> ' + toDoText +'</li>');
     }
+});
+
+//Toggle the textbox when the plus icon is clicked
+$('#toggle-form').click(function(){
+    $("input[type='text']").fadeToggle();
 });
