@@ -11,7 +11,7 @@
 }
 
 h1 {
-    background: #2980b9;
+    background: #0f9b0f;
     color: white;
     margin: 0;
     padding: 10px 20px;
@@ -28,6 +28,9 @@ ul {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 li {
@@ -47,11 +50,15 @@ input {
     width: 100%;
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
-    color: #2980b9;
+    color: #0f9b0f;
 }
 
 input:focus{
     background: #fff;
-    border: 3px solid #2980b9;
+    border: 3px solid #0f9b0f;
     outline: none;
+}
+
+.fa-plus {
+    float: right;
 }
