@@ -51,6 +51,7 @@ input {
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
     color: #0f9b0f;
+    border: 3px solid rgba(0, 0, 0, 0)
 }
 
 input:focus{
@@ -61,4 +62,20 @@ input:focus{
 
 .fa-plus {
     float: right;
+}
+
+span {
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+li:hover span{
+    width: 40px;
+    opacity: 1.0;
 }
